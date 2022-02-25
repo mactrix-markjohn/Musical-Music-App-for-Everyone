@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="@color/e4black"
+    android:layout_width="match_parent" android:layout_height="230dp">
+
+    <ImageView
+        android:id="@+id/albumimage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#55000000"/>
+    <ImageView
+        android:id="@+id/imagephone"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/albumimage"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/iphone"/>
+    <TextView
+        android:id="@+id/albumcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagephone"
+        android:layout_alignBottom="@id/albumimage"
+        android:layout_marginBottom="8dp"
+        android:text="15"
+        android:textSize="13dp"
+        android:textColor="#88ffffff"/>
+    <TextView
+        android:id="@+id/albumalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/albumartist"
+        android:layout_below="@+id/albumimage"
+        android:textColor="#ffffffff"
+        />
+    <TextView
+        android:id="@+id/albumartist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="11dp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:textColor="#66ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

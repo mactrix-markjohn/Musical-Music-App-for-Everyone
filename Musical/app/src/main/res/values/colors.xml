@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transblack">#ea000000</color>
+    <color name="transblue">#aa00ffff</color>
+    <color name="translightblack">#aa000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lightwhite">#77ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="lightred">#99ff0000</color>
+    <color name="blurtrans">#DD00aaFF</color>
+    <color name="blurlucid">#ad00aaff</color>
+    <color name="f7black">#f4000000</color>
+    <color name="transperent">#00000000</color>
+    <color name="transpant">#2f000000</color>
+    <color name="ccblack">#cc000000</color>
+    <color name="e4black">#e4000000</color>
+    <color name="e9black">#e9000000</color>
+    <color name="green">#cc00ff00</color>
+    <color name="yellow">#ccffff00</color>
+    <color name="purple">#ccaa00ff</color>
+    <color name="blackbeauty">#1A1A1A</color>
+    <color name="efblack">#ef000000</color>
+    <color name="blurman">#9900aaff</color>
+</resources>

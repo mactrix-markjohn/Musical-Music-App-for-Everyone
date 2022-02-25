@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guiter"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#cc000000"
+    tools:context="com.mactrix.www.musical.PurchaseRoom">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/roomback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:foreground="?android:selectableItemBackground"
+                android:layout_centerVertical="true"
+                android:src="@drawable/backing"/>
+            <TextView
+                android:id="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Purchase Room"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="If you want to Purchase\nthe Singing Studio Feature, Just..."/>
+        <Button
+            android:id="@+id/buysing"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="CLICK HERE"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="If you want to Remove all Ads\nin this App, Just.... " />
+        <Button
+            android:id="@+id/removeads"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="CLICK HERE"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeffffff"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/singbelow"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2742716340205774/7183022462">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+    <!--android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" /-->
+
+</android.support.design.widget.CoordinatorLayout>

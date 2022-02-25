@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mactrix.www.musical.CollectSongs">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fc000000"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/backing"
+            android:elevation="10dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        <ImageView
+            android:id="@+id/collectheadImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cele6"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#99000000"/>
+            <TextView
+                android:id="@+id/collectorheadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:maxLength="30"
+                android:textSize="25dp"
+                android:textColor="@color/blurtrans"
+                android:text="Adele ft John Legend for the"/>
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/collectingimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa000000"/>
+
+    <ListView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/collectorlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#15ffffff"
+        android:layout_above="@+id/imageooo"
+        android:dividerHeight="0.1dp"/>
+
+        <ImageView
+            android:id="@+id/imageooo"
+            android:background="#cc000000"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/bottomingsheeting"/>
+
+    <!--include layout="@layout/content_collect_songs" /-->
+
+    <!--android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" /-->
+
+</android.support.design.widget.CoordinatorLayout>

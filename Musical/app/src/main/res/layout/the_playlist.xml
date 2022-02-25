@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/playrelative"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@mipmap/micc"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/playcover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cc000000"/>
+
+    <TextView
+        android:id="@+id/intotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Playlist"
+        android:background="@color/transperent"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/white"
+        />
+
+    <ListView
+        android:id="@+id/playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/transperent"
+        android:layout_below="@+id/intotext"
+
+       />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/playlistdefault"
+        android:layout_width="match_parent"
+        android:background="@mipmap/cele6"
+        android:elevation="5dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ef000000"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/playlistdefaulttextinfo"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empyt"/>
+
+        <TextView
+            android:id="@+id/playlistdefaulttextinfo"
+            android:layout_above="@+id/playlistdefaultaddbotton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/blurtrans"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:text="@string/playlistdefaulttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/playlistdefaultaddbotton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blurtrans"
+            android:textColor="@color/white"
+            android:text="Create Playlist"
+            android:textSize="19dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="90dp"
+            android:layout_marginLeft="90dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:id="@+id/playlistfloatadd"
+        android:src="@drawable/add"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/concerting"
+    tools:context="com.mactrix.www.musical.Introduction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="60dp"
+        android:elevation="10dp"
+        android:text="Musical"
+        android:textColor="@color/blurtrans"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:elevation="10dp"
+        android:textColor="#aaffffff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:text="Music Player and Singing Studio"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/blurtrans"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="15dp"
+        android:text="Feel the Music through your System...."/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/musicalicon"
+        app:civ_border_color="@color/blurtrans"
+        app:civ_border_width="1.5dp"
+        android:layout_gravity="top|center"/>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

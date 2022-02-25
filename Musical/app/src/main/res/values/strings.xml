@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Musical</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_music_place">MusicPlace</string>
+    <string name="title_activity_collect_songs">CollectSongs</string>
+    <string name="title">play</string>
+    <string name="titlearray">next</string>
+    <string name="artist">pause</string>
+    <string name="artistarray">resume</string>
+    <string name="album">seekto</string>
+    <string name="albumarray">shuffle</string>
+    <string name="albumart">repeatone</string>
+    <string name="albumartarray">repeatall</string>
+    <string name="songdata">songs</string>
+    <string name="songarray">songarray</string>
+    <string name="songindex">songindex</string>
+    <string name="songbundle">songbundle</string>
+    <string name="songcomplete">songcomplete</string>
+    <string name="songcompletebundleintent">songcompletebundleintent</string>
+    <string name="servicesetup">servicesetup</string>
+    <string name="title_activity_play_list">PlayList</string>
+    <string name="title_activity_song_list">Song List</string>
+    <string name="title_activity_introduction">Introduction</string>
+    <string name="playlistdefaulttext">You currently do not have any Playlist.\nClick the \'CREATE PLAYLIST\' button to create a playlist.</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_intro_kara">IntroKara</string>
+    <string name="title_activity_sing_list">Sing List</string>
+    <string name="title_activity_singing_studio">Singing Studio</string>
+    <string name="title_activity_lyrics_studio">Lyrics Studio</string>
+    <string name="title_activity_lyrics_store">Lyrics Store</string>
+    <string name="title_activity_sing_own">SingOwn</string>
+    <string name="title_activity_loved_things">Amazing Apps</string>
+    <string name="title_activity_purchase_room">PurchaseRoom</string>
+    <string name="singConst">singConst</string>
+    <string name="adsConst">adsConst</string>
+</resources>

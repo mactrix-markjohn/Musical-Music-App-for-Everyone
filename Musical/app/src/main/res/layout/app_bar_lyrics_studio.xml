@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/singconcert"
+    tools:context="com.mactrix.www.musical.LyricsStudio">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dd000000"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_above="@+id/singbelow"
+            android:background="#00000000"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lyrictablet"
+                android:background="#00000000"
+                android:hint="Enter Lyrics here"
+                android:textColorHint="#77ffffff"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="casual"
+                android:gravity="top"
+                android:layout_above="@+id/lyrictabletbutton"
+                android:inputType="textMultiLine"
+                android:padding="9dp"
+                android:scrollbars="vertical"/>
+            <Button
+                android:id="@+id/lyrictabletbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@color/blurtrans"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/dividing"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_alignParentBottom="true"/>
+
+            <ImageView
+                android:id="@+id/dividing"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/lyrictabletstore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lyrics Store"
+                android:background="#55000000"
+                android:layout_toRightOf="@+id/dividing"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/singbelow"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#bbffffff"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20dp"
+            android:text="Lyrics Studio" />
+    </RelativeLayout>
+
+    <!--android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" /-->
+
+</android.support.design.widget.CoordinatorLayout>

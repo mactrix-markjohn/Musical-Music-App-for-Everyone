@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/playingo"
+            android:title="Musical" />
+
+        <item android:id="@+id/video"
+            android:title="My Videos"
+            android:icon="@drawable/video"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/microphoning"
+            android:title="Singing Studio" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ballpen"
+            android:title="Lyrics Studio" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/list"
+            android:title="Lyrics Store" />
+        <item android:id="@+id/loved"
+            android:title="Things you will really Love"
+            android:icon="@drawable/ic_phone"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item android:id="@+id/removingads"
+                android:title="Remove Ads"
+                android:icon="@drawable/cancelhead"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share Our App" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/rate"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+
+</menu>
